@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  background: url("../Img/BG-Home2.jpg");
+  background-size: cover;
+}
+
+.Logo h3 {
+  font-weight: bold;
+  line-height: 70px;
+  color: #fff;
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+}
+
+.nav-links {
+  line-height: 70px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.nav-links ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  transition: 0.5s;
+  background: #fff;
+}
+
+.nav-links ul li a:hover:after {
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+}

@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+:root {
+  --grey: #8898aa;
+  --gray: #8898aa;
+  --secondary: #f7fafc;
+  --success: #2dce89;
+  --danger: #f5365c;
+  --orange: #fb6340;
+  --primary: #5e72e4;
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  overflow-x: hidden;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.12),
+    0 7px 10px -5px rgba(0, 0, 0, 0.15);
+  margin: 5% 0;
+}
+
+.contentTable {
+  overflow-x: auto;
+}
+
+#contentTable #TableLowongan {
+  padding-top: 25px;
+}
+
+.contentTable table thead,
+#contentTable #TableLowongan thead {
+  background: var(--secondary);
+}
+
+.contentTable table thead th,
+#contentTable #TableLowongan thead th {
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#contentTable #TableLowongan thead th {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.contentTable table tbody td,
+#contentTable #TableLowongan tbody td {
+  padding: 20px;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  text-transform: normal;
+}
+
+#contentTable #TableLowongan tbody td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.dataTables_info {
+  margin-left: 15px;
+}
+
+.sorting::before,
+.sorting::after,
+.sorting_asc::before,
+.sorting_asc::after,
+.sorting_desc::before,
+.sorting_desc::after {
+  content: "";
+  font-size: 0px;
+}
+
+#TableLowongan_filter label input {
+  color: var(--gray);
+}
+
+#TableLowongan_info {
+  color: var(--gray);
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.btn-table {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn-table:nth-child(1) {
+  background: var(--blue);
+}
+
+.btn-table:nth-child(2) {
+  background: var(--danger);
+}
+
+.headerProfileAdmin {
+  transform: translateY(-55%);
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  background: var(--orange);
+  position: relative;
+}
+
+.headerProfileAdmin h5 {
+  line-height: 70%;
+}
+
+.titleContent {
+  position: relative;
+  width: 100%;
+}
+
+.titleContent:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--gray);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.titleContent p {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+
+.inputAdmin input {
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.btnUpdate-Profile {
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev {
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover {
+  background: var(--secondary);
+}
+
+.inputAdmin img {
+  cursor: pointer;
+}
+
+.detailGambar {
+  position: fixed;
+  top: 0;
+  display: none;
+  transform: scale(0);
+  transition: 0.6s;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.detailGambar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+}
+
+.detailGambar::-webkit-scrollbar {
+  width: 0px;
+  transition: 0.5s;
+}
+
+.detailGambar::-webkit-scrollbar-thumb {
+  background: var(--light);
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.detailGambar::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+  border-radius: 15px;
+}

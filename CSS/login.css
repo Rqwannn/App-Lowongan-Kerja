@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  background: url("../Img/BG-Home2.jpg");
+  background-size: cover;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.group i {
+  color: #000;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  cursor: pointer;
+  font-size: 15px;
+  transform: translateY(-50%);
+}
+
+.group label {
+  color: #000;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  font-size: 15px;
+  transform: translateY(-50%);
+  transition: 0.55s;
+}
+
+.group input:focus ~ label,
+.group input:valid ~ label {
+  left: 10px;
+  top: 20%;
+  font-size: 10px;
+}
+
+.group input {
+  border: none;
+  height: 65px;
+}
